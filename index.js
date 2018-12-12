@@ -1,6 +1,5 @@
 const MAX_LETTERS = 26;
 const A = "A".charCodeAt(0);
-const Z = "Z".charCodeAt(0);
 
 let rotateBy = 13;
 
