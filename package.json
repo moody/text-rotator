@@ -1,11 +1,25 @@
 {
   "name": "text-rotator",
   "version": "1.0.0",
-  "description": "A simple app which rotates text!",
+  "description": "A simple app which rotates text.",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files \"css/*.css\""
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moody/text-rotator.git"
   },
   "author": "Justin Moody",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  }
 }

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|PT+Mono')
+
+$white: ivory
+$opacity-1: rgba(0, 0, 0, 0.1)
+$opacity-2: rgba(0, 0, 0, 0.2)
+$opacity-5: rgba(0, 0, 0, 0.5)
+$opacity-6: rgba(0, 0, 0, 0.6)
+
+body
+  background: hsl(200, 40%, 35%)
+  font-family: "PT Mono", monospace
+  margin: 0
+  text-align: center
+
+h1, h2
+  color: $white
+  font-family: "Oswald", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  user-select: none
+
+h1
+  font-size: 3em
+  letter-spacing: 0.5em
+  margin: auto
+  opacity: 0.95
+  white-space: nowrap
+
+h2
+  background: $opacity-2
+  box-shadow: 0px 1px 3px $opacity-5
+  font-size: 2em
+  opacity: 0.8
+  padding: 10px
+
+textarea
+  background: rgba(0, 0, 0, 0.05)
+  border: none
+  box-sizing: border-box
+  color: $white
+  flex: 1
+  font-size: 1.4em
+  margin: auto
+  outline: none
+  padding: 10px 15px
+  resize: none
+  text-align: justify
+  text-transform: uppercase
+  width: 100%
+
+textarea::placeholder
+  color: $white
+  opacity: 0.6
+
+#main
+  display: flex
+  flex-flow: column wrap
+  min-height: 100vh
+
+#header
+  background: $opacity-1
+  box-shadow: 0px 1px 15px $opacity-5
+  display: flex
+  padding: 20px
+
+#content
+  display: flex
+  flex: 1
+  justify-content: space-evenly
+  align-content: center
+  align-items: center
+  margin: 30px 0px
+  text-transform: uppercase
+
+.textarea-card
+  border: 1px solid $opacity-5
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  width: 40vw
+  min-width: 400px
+  height: 60vh
+  box-shadow: 0px 0px 10px $opacity-6
+
+#incrementer
+  color: $white
+  display: flex
+  flex-flow: column nowrap
+  flex: 0 1
+  justify-content: center
+  align-items: center
+  font-size: 5em
+  padding: 10px
+  width: 50px
+  user-select: none
+
+  button
+    background: none
+    border: none
+    cursor: pointer
+    opacity: 0.5
+    outline: none
+    transition: all 250ms
+    margin: 10px
+  
+  button:hover
+    transform: scale(1.15)
+    opacity: 0.8
+
+#footer
+  background: $opacity-1
+  box-shadow: 0px -1px 15px $opacity-5
+  color: $white
+  display: flex
+  font-size: 0.8em
+  height: 50px
+  text-transform: lowercase
+  user-select: none
+
+  p
+    margin: auto
+  a
+    text-decoration: none
+    color: inherit
+    transition: color 500ms;
+  a:hover
+    color: lightgreen
+
+@media (max-width: 1000px)
+  h1
+    font-size: 5vw
+
+  #content
+    flex-flow: column wrap
+
+  .textarea-card
+    width: 80vw
