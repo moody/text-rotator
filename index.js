@@ -8,7 +8,7 @@ let incrementText;
 let upButton, downButton;
 let normalTextArea, rotatedTextArea;
 
-$( document ).ready(() => {
+$(document).ready(() => {
   // Init DOM objects
   incrementText = $("#increment-text");
   upButton = $("#up-button");
